@@ -1,0 +1,53 @@
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Doantotnghiep</groupId>
+  <artifactId>Doantotnghiep</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Doantotnghiep</name>
+  <dependencies>
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	 <!-- Selenium WebDriver -->
+	  		<dependency>
+	            <groupId>org.seleniumhq.selenium</groupId>
+	            <artifactId>selenium-java</artifactId>
+	            <version>4.11.0</version>
+	       </dependency>
+	       	<!-- TestNG -->
+		    <dependency>
+		        <groupId>org.testng</groupId>
+		        <artifactId>testng</artifactId>
+		        <version>7.4.0</version> <!-- Thay đổi version theo phiên bản bạn muốn sử dụng -->
+		    </dependency>
+		    <!-- WebDriverManager for managing WebDriver binaries -->
+	        <dependency>
+	            <groupId>io.github.bonigarcia</groupId>
+	            <artifactId>webdrivermanager</artifactId>
+	            <version>5.6.2</version>
+	        </dependency>
+	        <!-- SLF4J -->
+		    <dependency>
+		        <groupId>org.slf4j</groupId>
+		        <artifactId>slf4j-simple</artifactId>
+		        <version>2.0.9</version> <!-- Thay đổi version theo phiên bản bạn muốn sử dụng -->
+		    </dependency>
+		    <dependency>
+    			<groupId>org.apache.poi</groupId>
+    			<artifactId>poi-ooxml</artifactId>
+    			<version>5.2.3</version> <!-- Sử dụng phiên bản phù hợp -->
+			</dependency>
+			<dependency>
+    			<groupId>commons-io</groupId>
+    			<artifactId>commons-io</artifactId>
+   				<version>2.13.0</version> <!-- Phiên bản phù hợp -->
+			</dependency>
+  </dependencies>
+  <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
